@@ -16,20 +16,20 @@ function Home() {
         </thead>
         <tbody>
           {
-            Employees.map((user) => {
-              return(
+          Employees.map((user) => {
+            // console.log(user);
+              return (
                 <tr>
                   <td>{user.id}</td>
                   <td>{user.name}</td>
                   <td>{user.mobile_num}</td>
                 </tr>
-              )
-            })
-          }
+              );
+            
+          })}
         </tbody>
       </table>
     </>
   );
 }
 export default Home;
-
